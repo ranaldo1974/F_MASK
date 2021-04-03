@@ -1,5 +1,5 @@
 {
-  "image": "ranaldo1974/docker-sarwind",
+  "image": "ranaldo1974/docker-F_MASK",
   "resources": {
     "memory_mb": "16000",
     "cpu_units": ""
