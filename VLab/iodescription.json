@@ -1,18 +1,18 @@
 {
   "inputs": [
     {
-      "id": "InData",
+      "id": "Fmask_InData",
       "inputType": "individual",
       "valueType": "value",
-      "description": "URL to download the archive containing the input SAR pre-processed .bin/.hdr images",
+      "description": "URL to download the archive containing the input Sentinel-2 image",
       "name": "Input data",
       "obligation": true,
       "hasDefault": false,
       "valueSchema": "url",
-      "target": "/InData.zip"
+      "target": "/Fmask_InData.zip"
     },
     {
-      "id": "InIOInfoAndSettings",
+      "id": "Fmask_InIOInfoAndSettings",
       "inputType": "individual",
       "valueType": "value",
       "description": "URL to download the archive containing the input IO info and settings .txt files",
@@ -20,16 +20,16 @@
       "obligation": true,
       "hasDefault": false,
       "valueSchema": "url",
-      "target": "/InIOInfoAndSettings.zip"
+      "target": "/Fmask_InIOInfoAndSettings.zip"
     }	  
   ],
   "outputs": [
     {
-      "id": "SARWIND_LGMod_OutputData",
+      "id": "Fmask_OutputData",
       "outputType": "individual",
       "valueType": "value",
       "description": "Output archive",
-      "name": "OutData.zip",
+      "name": "Output data",
       "valueSchema": "url",
       "target": "/OutData.zip"
     },
