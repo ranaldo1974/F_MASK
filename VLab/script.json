@@ -6,13 +6,13 @@
       "pathType": "FILE"
  	},
     {
-      "repoPath": "run_SARWIND_MS_LGMod.sh",
-      "targetPath": "run_SARWIND_MS_LGMod.sh",
+      "repoPath": "run_Fmask_4_3.sh",
+      "targetPath": "run_Fmask_4_3.sh",
       "pathType": "FILE"
  	},
 	{
-      "repoPath": "SARWIND_MS_LGMod",
-      "targetPath": "SARWIND_MS_LGMod",
+      "repoPath": "Fmask_4_3",
+      "targetPath": "Fmask_4_3",
       "pathType": "FILE"
  	}
   ]
