@@ -32,15 +32,6 @@
       "name": "Output data",
       "valueSchema": "url",
       "target": "/OutData.zip"
-    },
-    {
-      "id": "SARWIND_LGMod_Results",
-      "outputType": "individual",
-      "valueType": "value",
-      "description": "Text file with results",
-      "name": "Results.txt",
-      "valueSchema": "url",
-      "target": "/SARWIND_LGMod_Results.txt"
     }
   ]
 }
