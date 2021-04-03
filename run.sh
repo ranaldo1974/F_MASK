@@ -3,8 +3,8 @@ echo "CONTENT OF THE CURRENT FOLDER"
 ls -a .
 echo "--------------------------------------------------------------"
 
-unzip ./InData.zip 
-unzip ./InIOInfoAndSettings.zip
+unzip ./Fmask_InData.zip 
+unzip ./Fmask_InIOInfoAndSettings.zip
 
 if [ -f /tmp/.X1-lock ]; then
     rm -f /tmp/.X1-lock
@@ -16,13 +16,6 @@ fi
 vnc4server
 
 export DISPLAY=$HOSTNAME:1
-./run_SARWIND_MS_LGMod.sh /MCR_R2016b/v91 ./InIOInfoAndSettings/SARWIND_IO_Info.txt ./InIOInfoAndSettings/SARWIND_Settings.txt
+./run_Fmask_4_3.sh /MCR_R2016b/v91 ./Fmask_InIOInfoAndSettings/Fmask_IO_Info.txt ./Fmask_InIOInfoAndSettings/Fmask_Settings.txt
 
 zip -r OutData.zip OutData
-
-if [ -d ./OutData/*Multiscale* ] 
-then
-    find ./OutData/*Multiscale* -name *_Results.txt -exec cp {} SARWIND_LGMod_Results.txt \;
-else
-    find ./OutData -name *_Results.txt -exec cp {} SARWIND_LGMod_Results.txt \;
-fi
