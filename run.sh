@@ -5,6 +5,8 @@ echo "--------------------------------------------------------------"
 
 unzip ./Fmask_InData.zip 
 unzip ./Fmask_InIOInfoAndSettings.zip
+unzip AuxiData.zip -d ./Fmask_InData
+unzip MCR_R2016b.zip ./
 
 if [ -f /tmp/.X1-lock ]; then
     rm -f /tmp/.X1-lock
@@ -16,6 +18,6 @@ fi
 vnc4server
 
 export DISPLAY=$HOSTNAME:1
-./run_Fmask_4_3.sh /MCR_R2016b/v91 ./Fmask_InIOInfoAndSettings/Fmask_IO_Info.txt ./Fmask_InIOInfoAndSettings/Fmask_Settings.txt
+./run_Fmask_4_3.sh ./MCR_R2016b/v91 ./Fmask_InIOInfoAndSettings/Fmask_IO_Info.txt ./Fmask_InIOInfoAndSettings/Fmask_Settings.txt
 
 zip -r OutData.zip OutData
