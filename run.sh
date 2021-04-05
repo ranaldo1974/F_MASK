@@ -3,13 +3,13 @@ echo "CONTENT OF THE CURRENT FOLDER"
 ls -a .
 echo "--------------------------------------------------------------"
 
-pwd
+pwd_var = `pwd`
 
 unzip ./Fmask_InData.zip 
 unzip ./Fmask_InIOInfoAndSettings.zip
 
-unzip Fmask_4_3.zip -d ./
-unzip AuxiData.zip -d ./Fmask_InData
+unzip Fmask_4_3.zip -d $pwd_var/
+unzip AuxiData.zip -d $pwd_var/Fmask_InData
 
 if [ -f /tmp/.X1-lock ]; then
     rm -f /tmp/.X1-lock
