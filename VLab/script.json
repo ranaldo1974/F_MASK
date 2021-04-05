@@ -9,11 +9,6 @@
       "repoPath": "run_Fmask_4_3.sh",
       "targetPath": "run_Fmask_4_3.sh",
       "pathType": "FILE"
- 	},
-	{
-      "repoPath": "Fmask_4_3",
-      "targetPath": "Fmask_4_3",
-      "pathType": "FILE"
  	}
   ]
 }
