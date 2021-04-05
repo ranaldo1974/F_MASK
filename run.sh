@@ -5,6 +5,8 @@ echo "--------------------------------------------------------------"
 
 unzip ./Fmask_InData.zip 
 unzip ./Fmask_InIOInfoAndSettings.zip
+
+unzip Fmask_4_3.zip -d ./
 unzip AuxiData.zip -d ./Fmask_InData
 
 if [ -f /tmp/.X1-lock ]; then
