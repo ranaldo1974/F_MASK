@@ -3,6 +3,8 @@ echo "CONTENT OF THE CURRENT FOLDER"
 ls -a .
 echo "--------------------------------------------------------------"
 
+pwd
+
 unzip ./Fmask_InData.zip 
 unzip ./Fmask_InIOInfoAndSettings.zip
 
