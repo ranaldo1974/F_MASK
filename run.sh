@@ -17,6 +17,11 @@ echo "CONTENT OF Fmask_InData"
 ls -l Fmask_InData/
 echo "--------------------------------------------------------------"
 
+/bin/sh prepare_io_info.sh Fmask_InData Fmask_IO_Info.txt
+
+echo "CONTENT OF Fmask_IO_Info.txt"
+cat Fmask_IO_Info.txt
+echo "--------------------------------------------------------------"
 
 unzip /Fmask_4_3.zip -d ./
 unzip /AuxiData.zip -d ./Fmask_InData/
@@ -35,7 +40,7 @@ fi
 vnc4server
 
 export DISPLAY=$HOSTNAME:1
-./run_Fmask_4_3.sh /MCR_R2016b/v91 ./Fmask_InIOInfoAndSettings/Fmask_IO_Info.txt Fmask_Settings.txt
+./run_Fmask_4_3.sh /MCR_R2016b/v91 Fmask_IO_Info.txt Fmask_Settings.txt
 
 zip -r OutData.zip OutData
 

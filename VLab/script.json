@@ -19,6 +19,11 @@
       "repoPath": "jp.sh",
       "targetPath": "jp.sh",
       "pathType": "FILE"
+    },
+    {
+      "repoPath": "prepare_io_info.sh",
+      "targetPath": "prepare_io_info.sh",
+      "pathType": "FILE"
     }
   ]
 }
