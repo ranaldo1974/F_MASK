@@ -14,6 +14,14 @@ echo "--------------------------------------------------------------"
 mkdir Fmask_InData
 unzip ./Fmask_InData.zip -d Fmask_InData/
 
+DUPLICATED=Fmask_InData/Fmask_InData
+if [ -d "$DUPLICATED" ]; then
+    echo "$DUPLICATED exists."
+    mv $(Fmask_InData/Fmask_InData/ | grep MSIL1C) Fmask_InData/
+    rm -r Fmask_InData/Fmask_InData
+fi
+
+
 echo "CONTENT OF Fmask_InData"
 ls -l Fmask_InData/
 echo "--------------------------------------------------------------"
