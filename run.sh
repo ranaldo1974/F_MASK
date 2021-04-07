@@ -41,6 +41,8 @@ vnc4server
 
 export DISPLAY=$HOSTNAME:1
 ./run_Fmask_4_3.sh /MCR_R2016b/v91 Fmask_IO_Info.txt Fmask_Settings.txt
-
+echo "CONTENT OF OutData"
+ls -l OutData/
+echo "--------------------------------------------------------------"
 zip -r OutData.zip OutData
 
