@@ -17,7 +17,7 @@ unzip ./Fmask_InData.zip -d Fmask_InData/
 DUPLICATED=Fmask_InData/Fmask_InData
 if [ -d "$DUPLICATED" ]; then
     echo "$DUPLICATED exists."
-    mv $(Fmask_InData/Fmask_InData/ | grep MSIL1C) Fmask_InData/
+    mv Fmask_InData/Fmask_InData/$(ls Fmask_InData/Fmask_InData/ | grep MSIL1C) Fmask_InData/
     rm -r Fmask_InData/Fmask_InData
 fi
 
