@@ -64,7 +64,8 @@
       "description": "Output archive",
       "name": "Output data",
       "valueSchema": "url",
-      "target": "OutData.zip"
+      "target": "OutData/fmask.tif",
+      "createFolder": false
     }
   ]
 }

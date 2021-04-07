@@ -44,5 +44,6 @@ export DISPLAY=$HOSTNAME:1
 echo "CONTENT OF OutData"
 ls -l OutData/
 echo "--------------------------------------------------------------"
-zip -r OutData.zip OutData
+mv OutData/$(ls OutData/ | grep Fmask) OutData/fmask.tif
+
 
