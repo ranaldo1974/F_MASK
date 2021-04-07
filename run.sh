@@ -7,8 +7,7 @@ echo "--------------------------------------------------------------"
 
 /bin/sh prepare_settings.sh vlabparams.json Fmask_Settings.txt
 
-unzip ./Fmask_InData.zip 
-unzip ./Fmask_InIOInfoAndSettings.zip
+unzip ./Fmask_InData.zip
 
 unzip /Fmask_4_3.zip -d ./
 unzip /AuxiData.zip -d ./Fmask_InData/
