@@ -26,7 +26,7 @@
       "id": "SHADOW_Cluster_MinDimPix",
       "inputType": "individual",
       "valueType": "value",
-      "name": "Cloud Shadow Clusters",
+      "name": "Shadow Clusters",
       "description": "Cloud Shadow Clusters (Minimum Dimension in pixel)",
       "obligation": false,
       "hasDefault": true,
