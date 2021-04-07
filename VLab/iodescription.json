@@ -12,16 +12,49 @@
       "target": "/Fmask_InData.zip"
     },
     {
-      "id": "Fmask_InIOInfoAndSettings",
+      "id": "CLOUD_Cluster_MinDimPix",
       "inputType": "individual",
       "valueType": "value",
-      "description": "URL to download the archive containing the input IO info and settings .txt files",
-      "name": "Input IO info and settings",
-      "obligation": true,
-      "hasDefault": false,
-      "valueSchema": "url",
-      "target": "/Fmask_InIOInfoAndSettings.zip"
-    }	  
+      "name": "Cloud Clusters (Minimum Dimension in pixel)",
+      "description": "Cloud Clusters (Minimum Dimension in pixel)",
+      "obligation": false,
+      "hasDefault": true,
+      "valueSchema": "number_parameter",
+      "defaultValue": 3
+    },
+    {
+      "id": "SHADOW_Cluster_MinDimPix",
+      "inputType": "individual",
+      "valueType": "value",
+      "name": "Cloud Shadow Clusters (Minimum Dimension in pixel)",
+      "description": "Cloud Shadow Clusters (Minimum Dimension in pixel)",
+      "obligation": false,
+      "hasDefault": true,
+      "valueSchema": "number_parameter",
+      "defaultValue": 3
+    },
+    {
+      "id": "SNOW_Cluster_MinDimPix",
+      "inputType": "individual",
+      "valueType": "value",
+      "name": "Snow Clusters (Minimum Dimension in pixel)",
+      "description": "Snow Clusters (Minimum Dimension in pixel)",
+      "obligation": false,
+      "hasDefault": true,
+      "valueSchema": "number_parameter",
+      "defaultValue": 0
+    },
+    {
+      "id": "CLOUD_ProbTH",
+      "inputType": "individual",
+      "valueType": "value",
+      "name": "Cloud Probability Threshold",
+      "description": "Cloud Probability Threshold",
+      "obligation": false,
+      "hasDefault": true,
+      "valueSchema": "number_parameter",
+      "defaultValue": 20
+    }
   ],
   "outputs": [
     {
