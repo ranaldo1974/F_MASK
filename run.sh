@@ -5,6 +5,8 @@ echo "--------------------------------------------------------------"
 
 #pwd_var = `pwd`
 
+/bin/sh prepare_settings.sh vlabparams.json Fmask_Settings.txt
+
 unzip ./Fmask_InData.zip 
 unzip ./Fmask_InIOInfoAndSettings.zip
 
@@ -21,7 +23,7 @@ fi
 vnc4server
 
 export DISPLAY=$HOSTNAME:1
-./run_Fmask_4_3.sh /MCR_R2016b/v91 ./Fmask_InIOInfoAndSettings/Fmask_IO_Info.txt ./Fmask_InIOInfoAndSettings/Fmask_Settings.txt
+./run_Fmask_4_3.sh /MCR_R2016b/v91 ./Fmask_InIOInfoAndSettings/Fmask_IO_Info.txt Fmask_Settings.txt
 
 zip -r OutData.zip OutData
 

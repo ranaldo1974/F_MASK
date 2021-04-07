@@ -9,6 +9,16 @@
       "repoPath": "run_Fmask_4_3.sh",
       "targetPath": "run_Fmask_4_3.sh",
       "pathType": "FILE"
- 	}
+ 	},
+    {
+      "repoPath": "prepare_settings.sh",
+      "targetPath": "prepare_settings.sh",
+      "pathType": "FILE"
+    },
+    {
+      "repoPath": "jp.sh",
+      "targetPath": "jp.sh",
+      "pathType": "FILE"
+    }
   ]
 }
