@@ -11,7 +11,8 @@ echo "CONTENT OF Fmask_Settings.txt"
 cat Fmask_Settings.txt
 echo "--------------------------------------------------------------"
 
-unzip ./Fmask_InData.zip
+mkdir Fmask_InData
+unzip ./Fmask_InData.zip -d Fmask_InData/
 
 echo "CONTENT OF Fmask_InData"
 ls -l Fmask_InData/
