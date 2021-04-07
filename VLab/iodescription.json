@@ -8,8 +8,8 @@
       "name": "Input data",
       "obligation": true,
       "hasDefault": false,
-      "valueSchema": "url",
-      "target": "/Fmask_InData.zip"
+      "valueSchema": "sat_product",
+      "target": "Fmask_InData.zip"
     },
     {
       "id": "CLOUD_Cluster_MinDimPix",
